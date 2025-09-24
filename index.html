@@ -1,11 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Ritaria Virtual State</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ritaria Virtual State — Алексей</title>
+  <style>
+    :root { --fg:#0d1627; --muted:#3b4a64; --card:#ffffff; --grad:linear-gradient(135deg,#e6f0ff,#f5f9ff); }
+    *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--grad);color:var(--fg);}
+    .wrap{max-width:920px;margin:0 auto;padding:40px 20px}
+    .card{background:var(--card);border-radius:16px;box-shadow:0 10px 30px rgba(13,22,39,.07);padding:32px}
+    h1{margin:0 0 12px;font-size:28px;line-height:1.2}
+    p{margin:0 0 16px;color:var(--muted)}
+    .cta{display:inline-block;padding:12px 18px;border-radius:10px;border:1px solid #d5def0;text-decoration:none;color:var(--fg)}
+    .cta.primary{background:#2f6fff;color:#fff;border-color:#2f6fff}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:16px}
+    @media(min-width:720px){ h1{font-size:36px} .grid{grid-template-columns:1fr 1fr} }
+  </style>
 </head>
 <body>
-    <h1>Hello from Ritaria Virtual State!</h1>
-    <p>Сайт успешно развернут.</p>
+  <div class="wrap">
+    <div class="card">
+      <h1>Ritaria Virtual State</h1>
+      <p>Музыкант · педагог · продюсер · футуролог. Сайт развёрнут на GitHub → Netlify.</p>
+      <div class="grid">
+        <a class="cta primary" href="mailto:contact@example.com">Связаться</a>
+        <a class="cta" href="https://github.com/ritariavirtualstate/my-site" target="_blank" rel="noopener">GitHub репозиторий</a>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
